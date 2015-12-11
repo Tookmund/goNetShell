@@ -9,8 +9,10 @@ import (
 func main() {
 	ln, err := net.Listen("tcp",":8080")
 	checkError(err)	
+	fmt.Println("Listening...")
 	for {
 		conn, err := ln.Accept()
+		fmt.Println("Got a connection")
 		checkError(err)
 		go netshell(conn)
 	}
