@@ -1,3 +1,5 @@
+### Status: Complete
+
 # goNetShell
 Netshell implemented in Go.
 
